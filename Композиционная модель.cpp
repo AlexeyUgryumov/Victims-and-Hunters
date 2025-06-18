@@ -524,8 +524,8 @@ int count_victims(field a[100][100])
 int main()
 {
     double mid_vict = 0; double mid_hunt = 0;
-    RenderWindow window(VideoMode(3150, 1500), "Victims and Hunters");
-    RectangleShape rect(Vector2f(10, 10));
+    RenderWindow window(VideoMode(1800, 800), "Victims and Hunters");
+    RectangleShape rect(Vector2f(7, 7));
     rect.setFillColor(Color(255, 0, 0));
     srand(time(0));
     field a[100][100];
@@ -586,7 +586,7 @@ int main()
                             if (a[i][j].victims >= 15) rect.setFillColor(Color(0, 0, 0));
 
 
-                rect.setPosition(i * 15, j * 15);
+                rect.setPosition(i * 9, j * 9);
                 window.draw(rect);
             }
 
@@ -602,7 +602,7 @@ int main()
                         else
                             if (a[i][j].hunters > 10) rect.setFillColor(Color(0, 0, 0));
 
-                rect.setPosition(i * 15 + 1515, j * 15);
+                rect.setPosition(i * 9 + 909, j * 9);
                 window.draw(rect);
             }
 
