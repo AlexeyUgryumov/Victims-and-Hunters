@@ -524,7 +524,7 @@ int count_victims(field a[100][100])
 int main()
 {
     double mid_vict = 0; double mid_hunt = 0;
-    RenderWindow window(VideoMode(1800, 800), "Victims and Hunters");
+    RenderWindow window(VideoMode(1800, 900), "Victims and Hunters");
     RectangleShape rect(Vector2f(7, 7));
     rect.setFillColor(Color(255, 0, 0));
     srand(time(0));
